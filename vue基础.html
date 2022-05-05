@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible", content="ie=edge">
+<title>标题2q211</title>
+
+
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="s in student">
+        {{s.id}} - {{s.name}} - {{s.age}}
+      </li>
+    </ul>
+  </div>
+
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script  type="text/javascript" src="./js/vue.js"></script>
+<script>
+  var app = new Vue({
+  el: '#app',
+  data: {
+    message: '页面加载于' + new Date().toDateString(),
+    student:[
+      {"id": "001", "name": "张三11", "age": 18},
+      {"id": "002", "name": "李四", "age": 19},
+      {"id": "003", "name": "王五", "age": 20},
+    ]
+  }
+  
+})
+</script>
+</body>
+</html>     
